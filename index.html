@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Modal UI Example</title>
+</head>
+<body >
+    <!-- styling dialog with 9-slicing sprites with CSS -->
+    <style>
+        @font-face {
+            font-family: "Retro";
+            src: url("retro.woff2") format("woff2");
+            font-weight: 400;
+        }
+        html {
+            height: 100%;
+        }
+        body, button {
+            font-family: "Retro", sans-serif;
+            letter-spacing: 1px;
+            line-height: 1.4rem;
+        }
+        body {
+            background-color: #5e7775;
+            image-rendering: pixelated;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .dialog {
+            
+            background: transparent;
+            border-color: transparent;
+            max-width: 400px;
+            padding: 40px;
+            filter: drop-shadow(5px 5px 0 rgba(52, 70, 69, 0.567));
+            color: white;
+            font-weight: bold;
+
+            /* This here is what actually make the tiling happen */
+            border-image: url("background-sprite.png");
+            border-image-slice: 34 fill;
+            border-image-width: 40px;
+            border-image-repeat: repeat;
+        }
+        .dialog::backdrop {
+            background: rgba(52, 70, 69, 0.567);
+        }
+
+        /* This is for the animation in */
+        .dialog[open] {
+            animation: show 0.5s ease normal;
+        }
+
+        @keyframes show {
+            from {
+                transform: translateY(110%);
+            }
+            to {
+                transform: translateY(0%);
+            }
+        }
+
+        /* Some basic button styling */
+        button {
+            background-color: #2d4341;
+            outline: 3px solid black;
+            border-top: 2px solid rgba(85, 151, 148, 0.567);
+            line-height: 24px;
+            color: rgb(255, 222, 76);
+            cursor: pointer;
+            font-weight: bold;
+            border: transparent;   
+        }
+    </style>
+
+    <!-- The dialog -->
+    <dialog class="dialog" onclose="closeDialog()">
+        <p>In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole  filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a hobbit-hole, and that means comfort.</p>
+        <form method="dialog">
+            <div>
+                <button value="cancel">Cancel</button>
+                <button value="confirm">Confirm</button>
+            </div>  
+        </form>      
+    </dialog>
+
+    <!-- Button to open the dialog -->
+    <button id="show-dialog" onclick="showModal()">Click to open</button>
+
+    <script defer>
+
+        const dialog = document.querySelector(".dialog")
+ 
+        function showModal() {
+            dialog.showModal()
+        }
+
+        function closeDialog() {
+            console.log(dialog.returnValue)
+        }
+
+    </script>
+</body>
+</html>
