@@ -1,6 +1,6 @@
 Hi there, I'm Björn Hjorth 👋
 
-I like combining the web and game development, if you like what you see please do not be a stranger and say "Hi" on Twitter [@colorsofcode](https://twitter.com/colorsofcode)
+I like combining the web and game development, if you like what you see please do not be a stranger and say "Hi" on Twitter [@browsermage](https://twitter.com/browsermage)
 
 
 <a href="https://pixel-ui-dialog.vercel.app/">Try live demo⚡️</a>
@@ -26,7 +26,7 @@ Making UI for games is hard and takes a lot of time, and I wanted to explore by 
 
 1. Clone the repo
    ```sh
-   git clone git@github.com:colorsofcode/pixel-ui-dialog.git
+   git clone git@github.com:browsermage/pixel-ui-dialog.git
    ```
 2. Move to the new directory
     ```sh
@@ -37,7 +37,7 @@ Making UI for games is hard and takes a lot of time, and I wanted to explore by 
 <!-- CONTACT -->
 ## Contact
 
-Björn Hjorth - [@colorsofcode](https://twitter.com/colorsofcode)
+Björn Hjorth - [@browsermage](https://twitter.com/browsermage)
 
 <!-- LICENSE -->
 ## License
