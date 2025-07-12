@@ -1,11 +1,9 @@
 Hi there, I'm Björn Hjorth 👋
 
-I like combining the web and game development, if you like what you see please do not be a stranger and say "Hi" on Twitter [@browsermage](https://twitter.com/browsermage)
+I like combining the web and game development, if you like what you see please do not be a stranger and say "Hi" on Twitter [@browsermage](https://bsky.app/profile/browsermage.com)
 
 
 <a href="https://pixel-ui-dialog.vercel.app/">Try live demo⚡️</a>
-·
-<a href="https://github.com/colorsofcode/pixel-ui-dialog/issues">Report Bug</a>
 
 <div align="center">
    <img src="./art/pixel-ui-dialog.gif" width="640" height="360">
@@ -37,7 +35,7 @@ Making UI for games is hard and takes a lot of time, and I wanted to explore by 
 <!-- CONTACT -->
 ## Contact
 
-Björn Hjorth - [@browsermage](https://twitter.com/browsermage)
+Björn Hjorth - [@browsermage](https://bsky.app/profile/browsermage.com)
 
 <!-- LICENSE -->
 ## License
