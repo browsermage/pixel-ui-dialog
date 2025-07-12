@@ -1,6 +1,6 @@
 Hi there, I'm Björn Hjorth 👋
 
-I like combining the web and game development, if you like what you see please do not be a stranger and say "Hi" on Twitter [@browsermage](https://bsky.app/profile/browsermage.com)
+I like combining the web and game development, if you like what you see please do not be a stranger and say "Hi" on Bsky [@browsermage](https://bsky.app/profile/browsermage.com)
 
 
 <a href="https://pixel-ui-dialog.vercel.app/">Try live demo⚡️</a>
